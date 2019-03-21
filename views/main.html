@@ -1,5 +1,6 @@
 <div class="v-container">
-  <div class="v-container-inner layer-black-gradient" style="background-image: url('../images/cover.f575bc42.jpg'); background-size: cover; background-position: bottom center;">
+  <div class="v-container-inner layer-black-gradient"
+    style="background-image: url('../images/cover.f575bc42.jpg'); background-size: cover; background-position: bottom center;">
     <div class="wrapper">
       <div class="header">
         <div class="container">
@@ -8,13 +9,15 @@
               <div class="card card-signup">
                 <div class="header header-primary text-center">
                   <h1 class="text-center">
-                    <img class="img-responsive" style="display: inline-block" src="images/logo-campanha.ca83ede7.svg" alt="{{appTitle}}" />
+                    <img class="img-responsive" style="display: inline-block" src="images/logo-campanha.ca83ede7.svg"
+                      alt="{{appTitle}}" />
                   </h1>
                   <br />
                   <h4>Login</h4>
                 </div>
                 <form name="userForm" ng-submit="submitForm(userForm.$valid, email, password)" novalidate>
-                  <div class="language-select text-center bg-primary" ng-controller="LanguageselectCtrl" ng-if="Utils.keys(grupo.multilingua.linguas).length > 1"
+                  <div class="language-select text-center bg-primary" ng-controller="LanguageselectCtrl"
+                    ng-if="Utils.keys(grupo.multilingua.linguas).length > 1"
                     style="padding-top: 20px; padding-bottom: 20px; color: white;">
 
                     <ul class="list-inline" style="margin-bottom: 0;">
@@ -23,7 +26,8 @@
                       </li>
                       <li ng-repeat="(key, value) in localesNamesWithKeys">
                         <small>
-                          <a href="" style="color: white;" ng-click="changeLanguage(key)" ng-class="key === currentLocaleDisplayName ? 'text-underline' : ''">
+                          <a href="" style="color: white;" ng-click="changeLanguage(key)"
+                            ng-class="key === currentLocaleDisplayName ? 'text-underline' : ''">
                             <span></span> {{value}}</a>
                         </small>
                       </li>
@@ -35,7 +39,8 @@
                       <span class="input-group-addon">
                         <i class="material-icons">email</i>
                       </span>
-                      <input type="email" name="email" class="form-control" ng-model="email" placeholder="{{ 'Insira seu e-mail' | translate }}">
+                      <input type="email" name="email" class="form-control" ng-model="email"
+                        placeholder="{{ 'Insira seu e-mail' | translate }}">
                       <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">{{'Insira um
                         e-mail válido' | translate}}</p>
                     </div>
@@ -44,21 +49,23 @@
                       <span class="input-group-addon">
                         <i class="material-icons">lock_outline</i>
                       </span>
-                      <input type="password" name="password" class="form-control" ng-model="password" placeholder="{{'Digite sua senha' | translate}}">
+                      <input type="password" name="password" class="form-control" ng-model="password"
+                        placeholder="{{'Digite sua senha' | translate}}">
                     </div>
                   </div>
 
                   <div class="footer text-center">
                     <div class="row">
                       <div class="col-xs-12">
-                        <button type="submit" href="#" class="btn btn-primary" ng-disabled="userForm.email.$invalid || !userForm.email.$viewValue">
+                        <button type="submit" href="#" class="btn btn-primary"
+                          ng-disabled="userForm.email.$invalid || !userForm.email.$viewValue">
                           <i class="material-icons fa-spin" ng-if="stateIsLoading">autorenew</i> Login</button>
                         <div class="alert alert-danger" ng-show="hasError">
                           <span style="text-transform: capitalize">{{errorMsg | translate}}</span>
                         </div>
                         <p ng-show="grupo.loginPorSenha"> <br> <a href="#">
-                          <small>Esqueci minha senha</small>
-                        </a></p> 
+                            <small>Esqueci minha senha</small>
+                          </a></p>
                         <hr />
 
 
@@ -67,8 +74,10 @@
                         <!-- <div ng-include="'/views/footer.html'"></div> -->
                         <div class="alert alert-primary text-center" role="alert" style="margin-bottom: 0;">
                           <p><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Em caso de
-                            dúvidas, entre em contato pelo telefone {{grupo.telefone}} ou pelo
-                            e-mail <a href="mailto:{{grupo.email}}">{{grupo.email}}</a>.</p>
+                            dúvidas, entre em contato pelo telefone Renata Ferroni - (11) 3957-6504 - <a
+                              href="mailto:alliadozcartagena2@voqin.com">alliadozcartagena2@voqin.com</a> / Jacqueline
+                            Altopiedi - (11) 3957-6997 - <a
+                              href="mailto:alliadozcartagena2@voqin.com">alliadozcartagena2@voqin.com</a>.</p>
                         </div>
                         <br>
                       </div>
