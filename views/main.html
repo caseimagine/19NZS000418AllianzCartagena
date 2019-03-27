@@ -1,7 +1,7 @@
 <div class="v-container">
   <div class="v-container-inner layer-black-gradient"
     style="background-image: url('../images/cover.f575bc42.jpg'); background-size: cover; background-position: bottom center;">
-    <div class="main-top">
+    <div class="main-top hidden-xs">
       <nav class="navbar navbar-transparent navbar-fixed-top">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -21,11 +21,15 @@
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
               <div class="card card-signup">
                 <div class="header header-primary text-center">
+                  <div class="row visible-xs">
+                    <div class="col-xs-4  "><img class="img-responsive" src="images/logo-top.328ff914.svg" alt="{{appTitle}}" /></div>
+                  </div>
                   <h1 class="text-center">
+                    <span class="visible-xs"><img class="img-responsive" src="images/logo-alliadoz.5c9133e1.png"  style="display: inline-block"  alt="{{appTitle}}" /></span>
+                      
                     <img class="img-responsive" style="display: inline-block" src="images/logo-campanha.ca83ede7.svg"
                       alt="{{appTitle}}" />
                   </h1>
-                  <br />
                   <h4>Login</h4>
                 </div>
                 <form name="userForm" ng-submit="submitForm(userForm.$valid, email, password)" novalidate>
@@ -105,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div class="main-bottom">
+    <div class="main-bottom hidden-xs">
       <img class="img-responsive" src="images/logo-allianz-inferior.d9102e64.png" alt="{{appTitle}}" />
     </div>
   </div>
